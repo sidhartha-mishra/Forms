@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation-Of-Signup-Page</title>
+    <style>
+        h1{
+            text-decoration: underline 5px rgb(0, 68, 255) solid;
+            color: yellow;
+            text-align: center;
+        }
+        table{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: black;
+            border-radius: 25px;
+            padding: 50px;
+        }
+        #btn{
+            color: black;
+            font-weight: bold;
+            background-color: green;
+            height: 30px;
+            width: 100px;
+            border-radius: 25px;
+        }
+        body{
+            background: linear-gradient(red, blue);
+            padding: 15px;
+        }
+        textarea{
+        width: 350px;
+        }
+        input{
+            height: 30px;
+        }
+        select{
+            height: 35px;
+            width: 350px;
+        }
+        legend{
+            text-align: center;
+            font-weight:bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: #7d6970;
+
+        }
+    </style>
+</head>
+<body background="../../HTML/Images/SidharthaBackground.jpg">
+    <h1>Welcome to Sidhartha Technologies</h1>
+    <fieldset>
+        <legend>Get register yourself...</legend>
+    <form action="Login.html" autocomplete="off">
+    <table align="center" cellspacing="15">
+        <!-- First Name... -->
+        <tr>
+            <td>
+                <label for="fname">First Name:</label>
+            <td><input type="text" placeholder="Enter your first name..." size="50" id="fname" required></td>
+        </tr>
+        <!-- Last Name... -->
+        <tr>
+            <td>
+                <label for="mname">Middle Name :</label></td>
+            <td><input type="text" placeholder="Enter your middle name..." size="50" id="mname" required></td>
+        </tr>
+
+        <!-- Middle Name... -->
+        <tr>
+            <td>
+                <label for="lname">Last Name :</label></td>
+                <td><input type="text" placeholder="Enter your last name..." size="50" id="lname" required></td>
+        </tr>
+
+        <!-- Email address... -->
+        <tr><td><label for="mail">Email :</label></td>
+            <td><input type="email" placeholder="Enter your email address..."  size="50" id="mail" required></td>
+        </tr>
+        <!-- Mobile number validation... -->
+        <tr>
+            <td><label for="mobile">Mobile:</label></td>
+            <td><input type="tel" placeholder="Enter your mobile number..." pattern="[789][0-9]{9}" size="50" id="mobile" required></td>
+        </tr>
+        <!-- Password... -->
+        <tr><td><label for="pass">Password:</label></td>
+            <td><input type="password" placeholder="Enter your password..." size="50" id="pass" required></td>
+        </tr>
+        <!-- Confirm Password.... -->
+        <tr><td><label for="cpass">Confirm Password:</label></td>
+            <td><input type="password" placeholder="Confirm your password..." size="50" id="cpass" required></td>
+        </tr>
+        <!-- Gender... radio-button -->
+        <tr>
+            <td><label for="gen">Gender:</label></td>>
+            <td><input type="radio" name="gender" id="gen" required>Male:
+                <input type="radio" name="gender" id="gen" required>Female:
+                <input type="radio" name="gender" id="gen" required>Third-gender</td>
+        </tr>
+        <!-- Date of birth in date -->
+        <tr>
+            <td><label for="dob">D.O.B:</label></td>
+            <td><input type="date" size="50" id="dob" style="width: 345px;" required></td>
+        </tr>
+        <!-- Last education dropdown... -->
+        <tr>
+            <td><label for="led">Last-Education:</label></td>
+            <td>
+                <select name="" id="led" required>
+                    <option value="Select">Select</option>
+                    <option value="bachelor">Bachelor</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="metric">Metric</option>
+                    <option value="undermetric">Undermetric</option>
+                    <option value="minor">Minor</option>
+                </select>
+            </td>
+        </tr>
+        <!-- Hobbies in checkbox... -->
+        <tr>
+            <td><label for="hob">Hobbies:</label></td>
+            <td>
+                Travelling<input type="checkbox" name="hobbby" id="hob">
+                Movies<input type="checkbox" name="hobbby" id="hob">
+                Trecking<input type="checkbox" name="hobbby" id="hob">
+                Coding<input type="checkbox" name="hobbby" id="hob">
+            </td>
+        </tr>
+        <!-- Address using text area.... -->
+        <tr>
+            <td><label for="adr">Address:</label></td>
+            <td>
+                <textarea name="" id="adr" cols="30" rows="10" placeholder="Enter your address here..." required></textarea>
+            </td>
+        </tr>
+        <!-- Submit... -->
+        <tr>
+            <td align="center" colspan="2"><input type="submit" id="btn"></td>
+        </tr>
+    </table>
+</form>
+</fieldset>
+</body>
+</html>
